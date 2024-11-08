@@ -28,9 +28,12 @@ interface Transaction {
 const Body = styled.div<{ error: boolean }>`
     display: flex;
     width: 80vw;
+    max-width: 1280px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: center;
+    justify-self: center;
     display: ${({ error }) => error && "none"};
     color: black;
 `;
